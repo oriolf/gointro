@@ -1,0 +1,22 @@
+Go
+(Otra) Introducción
+29 Sep 2016
+
+Carles Aragón
+Oriol Flors
+
+* Porqué Go?
+
+* Qué es Go?
+
+* Hello, 世界
+
+.play 1.go
+
+* Garbage Collector
+
+.image images/gc1.png
+
+* Garbage Collector 2
+
+.image images/gc2.png 500 _

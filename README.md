@@ -1,2 +1,1 @@
-# gointro
-(Just another) Introduction to Go
+# (Just another) Introduction to Go
