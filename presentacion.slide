@@ -72,6 +72,63 @@ Fa compilacions més ràpides evitant recompilar coses que ja estan compilades (
 
 * Show me some code!
 
+* Basics
+* Packages
+
+Every program is made of packages.
+
+In order to use them we just need to import them.
+
+.play code/packages.go
+
+
+* Exported Names
+
+A name is only exported if it begins with a capital letter!
+
+.play code/expNames1.go
+.play code/expNames2.go
+
+
+* Functions
+
+.code code/functions1.go
+
+* Functions with multiple results
+
+.play code/functions2.go
+
+We can avoid the type of some arguments if they have the same type.
+.code code/functions3.go
+
+* Variables
+
+"var" is the statment that declares variables.
+.code code/variables1.go
+
+Inside a function we can use the short assigment
+.code code/variables2.go
+
+Variables can have different types, some of them are:
+.code code/variables3.go
+
+Variables without initial value have these values:
+.code code/variables4.go
+
+* More about variables
+
+Type conversion
+.play code/variables5.go
+
+Constants are declared as variables with "const" statement.
+
+Can not use short assigment :=
+.code code/variables6.go
+
+
+
+* More examples
+
 
 
 * Servidor HTTP
