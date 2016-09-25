@@ -8,20 +8,85 @@ Oriol Flors
 * Porqué Go?
 .link https://www.youtube.com/watch?v=uQgWP7zM6mU Another Golang at Language Design, Rob Pike
 
+Problemas con los lenguajes _mainstream_ (C++, Java...)
+
+- Tiempos de compilación excesivos
+(el desarrollo de Go se inicia durante una pausa de 45 minutos para compilar un programa de C++ en los clústeres de compilación de Google)
+
+- Verbosos
+
   foo::Foo *myFoo = new foo::Foo(foo::FOO_INIT)
+  
+- Antiguos, no se adaptan al nuevo _hardware_
 
-Reacció a això: inventar altres llenguatges (Python, Haskell...) que funcionen diferent. 
-Confusió entre dinàmic i fàcil, static i difícil
-Llenguatges antics i no adaptats a multicore programming, tarden molt a compilar, binaris enormes...
 
-Els dinàmics eviten verbositat, no han desperar al compilador, però son lents i no son type-safe.
+
+* Porqué Go?
+
+Problemas con los nuevos lenguajes _dinámicos_ (Python, Ruby...)
+
+- Falta de _static_typing_
+- Menor eficiencia
+- Siguen sin adaptarse al nuevo _hardware_
+
+
+
+* Porqué Go?
+
+Otros problemas
+
+- Confusión entre dinámico-fácil, estático-difícil
+- Demasiadas _features_ y sofisticación
+- Difícil trabajar en proyectos de millones de líneas
+
+
 
 * Qué pretende Go?
 .link https://talks.golang.org/2014/gocon-tokyo.slide Go: 90% Perfect, 100% of the time, Brad Fitzpatrick
 
-Go pretèn tindre el bo, evitar el dolent, i adaptar-se a la infraestructura moderna.
+- Quedarse con lo bueno de cada mundo: _static_typing_ pero lenguaje conciso, compilado (eficiente)
+- Evitar lo negativo: tiempos de compilación reducidos
+- Adaptarse a grandes proyectos y hardware moderno: soporte para concurrencia, lenguaje simple con características _ortogonales_
 
-.image images/languages_comparison.png
+
+
+* Qué pretende Go?
+
+.image images/languages_comparison.png 500 _
+
+
+
+* Qué es Go?
+
+_Go_is_a_strongly,_statically_typed,_compiled_language_with_builtin_support_for_concurrency_
+
+Diseñado inicialmente por consenso entre los creadores: Ken Thompson, Robert Griesemer i Rob Pike
+
+Pretende evitar el camino de otros lenguajes, que añaden características de otros, añadiendo complejidad y evolucionando hacia ser el mismo lenguaje con distinta sintaxis
+
+
+
+* Go es un lenguaje simple
+.link https://www.youtube.com/watch?v=rFejpH_tAHM Simplicity is Complicated, Rob Pike
+
+- Gorutinas
+- Constantes
+- Interfaces
+- Paquetes
+- Recolector de basura
+
+
+
+* Garbage Collector
+
+.image images/gc1.png
+
+
+
+* Garbage Collector 2
+
+.image images/gc2.png 500 _
+
 
 
 * Go proverbs
@@ -40,37 +105,14 @@ Go pretèn tindre el bo, evitar el dolent, i adaptar-se a la infraestructura mod
 - Don't panic.
 
 
-* Qué es Go?
 
-Llenguatge strongly, staticly typed, compiled language with builtin support for concurrency.
-
-Fa compilacions més ràpides evitant recompilar coses que ja estan compilades (no permet cicles en el import path).
-
-És un llenguatge dissenyat (al principi) per consens: Ken Thompson, Robert Griesemer i Rob Pike)
-
-.link https://www.youtube.com/watch?v=rFejpH_tAHM Simplicity is Complicated, Rob Pike
-
-
+* Show me some code!
 
 * Hello, 世界
 
 .play code/1.go
 
 
-
-* Garbage Collector
-
-.image images/gc1.png
-
-
-
-* Garbage Collector 2
-
-.image images/gc2.png 500 _
-
-
-
-* Show me some code!
 
 * Basics
 * Packages
@@ -167,5 +209,11 @@ Can not use short assigment :=
 * Consumo de memoria
 
 .play code/example6.go
+
+
+
+* Nexus
+
+.play code/example7.go
 
 
