@@ -1,25 +1,11 @@
 package main
-import "fmt"
-import "time"
-import "runtime"
-func main() {
-    PrintMem()
-    for i := 0; i < 5; i++ {
-        KeepMemory()
-        time.Sleep(1 * time.Second)
-        PrintMem()
-    }
-}
 
-func PrintMem() {
+import "fmt"
+import "runtime"
+
+func main() {
     var m runtime.MemStats
     runtime.ReadMemStats(&m)
-    fmt.Println("Alloc: ", m.Alloc / 1024, "KiB")
-}
-
-func KeepMemory() {
-    total := make([]byte, 200 * 1024 * 1024)
-    
-    fmt.Println("Total length: ", len(total))
-    PrintMem()
+    fmt.Println("Total: ", m.TotalAlloc / 1024, "KiB")
+    fmt.Println("Used: ", m.Alloc / 1024, "KiB")
 }

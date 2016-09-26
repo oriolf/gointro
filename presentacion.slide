@@ -208,6 +208,12 @@ Can not use short assigment :=
 
 * Consumo de memoria
 
+.code code/example6.1.java
+
+
+
+* Consumo de memoria
+
 .play code/example6.go
 
 
