@@ -98,11 +98,9 @@ Pretende evitar el camino de otros lenguajes, que añaden características de ot
 - Make the zero value useful.
 - Gofmt's style is no one's favorite, yet gofmt is everyone's favorite.
 - A little copying is better than a little dependency.
-- With the unsafe package there are no guarantees.
 - Clear is better than clever.
 - Errors are values.
 - Don't just check errors, handle them gracefully.
-- Don't panic.
 
 
 
@@ -243,7 +241,7 @@ If
 
 * Consumo de memoria
 
-.code code/example6.1.java
+.code code/MemoryTest.java
 
 
 
