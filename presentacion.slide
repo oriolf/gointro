@@ -117,16 +117,16 @@ Pretende evitar el camino de otros lenguajes, que añaden características de ot
 * Basics
 * Packages
 
-Every program is made of packages.
+Todos los programas se componen de paquetes.
 
-In order to use them we just need to import them.
+Para utilizarlos solamente se necesita importarlos.
 
 .play code/packages.go
 
 
 * Exported Names
 
-A name is only exported if it begins with a capital letter!
+Un nombre se exporta si y solo si empieza por mayúscula.
 
 .play code/expNames1.go
 .play code/expNames2.go
@@ -140,33 +140,68 @@ A name is only exported if it begins with a capital letter!
 
 .play code/functions2.go
 
-We can avoid the type of some arguments if they have the same type.
+Se puede evitar el tipo de los argumentos si más de uno tienen el mismo.
 .code code/functions3.go
 
 * Variables
 
-"var" is the statment that declares variables.
+"var" es la palabra usada para declarar variables.
 .code code/variables1.go
 
-Inside a function we can use the short assigment
+Dentro de las funciones se puede utilizar una abreviación si se quiere declarar e inicializar a la vez.
 .code code/variables2.go
 
-Variables can have different types, some of them are:
+Las variables pueden tener diferentes tipos, algunos de estos son:
 .code code/variables3.go
 
-Variables without initial value have these values:
+Las variables sin valor inicial tienen estos valores:
 .code code/variables4.go
 
-* More about variables
+* Más sobre  variables
 
-Type conversion
+Converión de tipos
 .play code/variables5.go
 
-Constants are declared as variables with "const" statement.
+Las constantes se declaran como las variables pero con la palabra const.
 
-Can not use short assigment :=
+No se puede utilizar la abreviación :=
 .code code/variables6.go
 
+
+* Controladores de flujo
+
+For es el único tipo de bucle
+
+.play code/for.go
+
+
+* Controladores de flujo
+
+If
+
+.code code/if1.go
+
+* If puede recibir una declaración
+
+.play code/if2.go
+
+* Cómo podríamos mejorar esto con Go? 
+.code code/switch.go
+
+* Increíble!
+.play code/switch2.go
+
+* Arrays and Slices
+
+.play code/arrays.go
+
+* Gorutines and Defer
+
+.play code/gorutines.go
+
+* Channels
+
+.play code/channels.go
 
 
 * More examples
