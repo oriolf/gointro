@@ -1,4 +1,4 @@
-0    	for numeric types
-false	for boolean types
-""   	for strings
- 
+0    	para numeric types
+false	para boolean types
+""   	para strings
+nil	  para punteros, funciones, slices, channels... 

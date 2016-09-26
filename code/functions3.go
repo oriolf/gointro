@@ -1,4 +1,4 @@
-func swapName(name, surname string) (surname, name string) {
-	return surname, name
+func swapName(n, s string) (surname, name string) {
+	return s, n
 }
 
