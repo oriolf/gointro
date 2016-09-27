@@ -126,15 +126,16 @@ Para utilizarlos solamente se necesita importarlos.
 
 * Exported Names
 
+.play code/expNames1.go
+
 Un nombre se exporta si y solo si empieza por mayúscula.
 
-.play code/expNames1.go
 .play code/expNames2.go
 
 
 * Functions
 
-.code code/functions1.go
+.play code/functions1.go
 
 * Functions with multiple results
 
