@@ -1,21 +1,25 @@
-public static void  main(String[] args) {
+public class Fruta {
+  public static void main(String[] args) {
 
-	string color = "verde"
-
-	if( color.equals("naranja") ){
-		System.out.println("Mandarina")
-	} elif {
-		if( color.equals("amarillo") ){
-			System.out.println("Limón")
-		}
-	} elif {
-		if( color.equals("verde") ){
-			System.out.println("Pera")
-		}
-	} elif {
-		if( color.equals("Rojo") ){
-			System.out.println("Cereza")
-		}
-	}
-
+    String fruta = "cereza";
+    switch (fruta){
+        case "platano":
+            System.out.println("Color amarillo");
+            break;
+        case "naranja":
+            System.out.println("Color naranja");
+            break;
+        case "fresa":
+            System.out.println("Color rojo");
+            break;
+        case "pera":
+            System.out.println("Color verde");
+            break;
+        case "cereza":
+            System.out.println("Color rojo");
+            break;
+        default:
+            System.out.println("Color indefinido");
+    }
+  }
 }

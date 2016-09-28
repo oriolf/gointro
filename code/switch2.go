@@ -1,18 +1,23 @@
+package main
+import "fmt"
 func  main() {
 
-	color := "verde"
+	fruta := "fresa"
 	
-	switch {
-		case color == "naranja":
-			fmt.Println("Mandarina")
+	switch fruta{
+		case "platano":
+			fmt.Println("Color amarillo")
 
-		case color == "amarillo":
-			fmt.Println("Limón")
+		case "naranja":
+			fmt.Println("Color naranja")
 
-		case color == "verde":
-			fmt.Println("Pera")
+		case "pera":
+			fmt.Println("Color verde")
 
-		case color == "Rojo":
-			fmt.Println("Cereza")
+		case "fresa", "cereza":
+			fmt.Println("Color rojo")
+
+		default:
+			fmt.Println("Color indefinido")
 	}
 }
