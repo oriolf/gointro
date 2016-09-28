@@ -1,23 +1,24 @@
 package main
+
 import "fmt"
-func  main() {
 
+func main() {
 	fruta := "fresa"
-	
-	switch fruta{
-		case "platano":
-			fmt.Println("Color amarillo")
 
-		case "naranja":
-			fmt.Println("Color naranja")
+	switch fruta {
+	case "platano":
+		fmt.Println("Color amarillo")
 
-		case "pera":
-			fmt.Println("Color verde")
+	case "naranja":
+		fmt.Println("Color naranja")
 
-		case "fresa", "cereza":
-			fmt.Println("Color rojo")
+	case "pera":
+		fmt.Println("Color verde")
 
-		default:
-			fmt.Println("Color indefinido")
+	case "fresa", "cereza":
+		fmt.Println("Color rojo")
+
+	default:
+		fmt.Println("Color indefinido")
 	}
 }

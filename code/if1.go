@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	if "a" < "b" {
 		fmt.Println("Hello")
-	}else{
+	} else {
 		fmt.Println("Bye")
 	}
 }

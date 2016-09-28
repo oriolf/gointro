@@ -1,1 +1,1 @@
-operator, divisor, color : 4, 16, "red"
+operator, divisor, color := 4, 16, "red"
